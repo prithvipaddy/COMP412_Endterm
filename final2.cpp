@@ -3,13 +3,13 @@
 
 void Vehicle :: printVehicleGuidelines()
 {
-    std::cout << "The vehicle will start with fuel set to 100. Driving at high RPM will cause higher fuel consumption.\n\n" <<
+    std::cout << "The vehicles will start with fuel set to 100. Driving at high RPM will cause higher fuel consumption.\n\n" <<
     "For the vehicle to run the RPM must be between 1000 and 8000. " <<
     "If it goes below 1000, the vehicle will stall and the engine needs to be restarted. " <<
     "If it goes above 8000, the engine will fail and the vehicle will not be drivable.\n\n" <<
     "Upshifting will cause the RPM to reduce by 3000. Downshifting will cause it to increase by 2000. There are only 5 gears and no reverse gear.\n\n" <<
     "Each iteration is counted as one minute, distance covered will be measured accordingly. \n\n" <<
-    "The program will run till the fuel runs out." << std::endl;
+    "The race will be won by the car with the highest distance covered. The race will go on for 10 minutes (10 iterations)." << std::endl;
 }
 
 void Car::inputChoice()
