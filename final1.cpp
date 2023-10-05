@@ -16,6 +16,8 @@ void Car::inputChoice()
 {
     while(fuel>0)
     {
+        if(checkRPM()==false)
+        break;
         displaySpeed();
         try{
             std::cout << "Enter which option you would like to choose: \n" <<
