@@ -1,0 +1,10 @@
+
+final2_main.exe : final2_main.o final2.o
+	g++ -o final2_main.exe final2_main.o final2.o
+
+final2_main.o : final2_main.cpp
+	g++ -c final2_main.cpp
+
+final2.o : final2.cpp
+	g++ -c final2.cpp
+
